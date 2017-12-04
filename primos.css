@@ -1,0 +1,11 @@
+.Fondo{
+    background-color: rgb(60, 145, 179)
+}
+
+.primos:hover {
+	background-color: rgb(30, 255, 0);
+}
+
+.noprim:hover {
+    background-color: rgb(226, 43, 43);
+}

@@ -6,18 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Primos</title>
     <script src="primos.js"></script>
+    <link rel="stylesheet" type="text/css" href="primos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	
+	
 </head>
-<body>
-        <h1>Primos</h1>
-        <table class="table table-hover">
-            <script>
+<body class="Fondo">
+    <h1>Primos</h1>
+    <table class="table table-hover">
+        <script>
+            
             var numero = prompt("Introduce un numero");
-
-            if (primo(numero)) {
-                document.write("es primo")
+            var i;
+            if(numero<1){
+                document.write("Introduce un numero mayor a 1");
             }
-
-            </script>        
-        </table>   
+            
+            for(var i=1; i<=numero; i++){
+                
+            if (primo(i)) {
+                document.write("<tr><td class='primos'>"+i+ " es primo </tr></td>");
+            } else {
+                document.write("<tr><td class='noprim'>"+i+ " no es primo </tr></td>");
+            }
+        }
+            
+        </script>        
+    </table>   
 </body>
 </html>
